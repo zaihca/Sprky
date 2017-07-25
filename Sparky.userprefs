@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{8D366807-7237-479E-858A-9E59DA638D0A}|Default">
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="Sparky/App.xaml" Line="6" Column="1" />
+      <File FileName="Sparky/Views/Page1Menu.xaml" Line="1" Column="1" />
+      <File FileName="Sparky/Views/Page1Menu.xaml.cs" Line="19" Column="49" />
+      <File FileName="Sparky/Views/Page2AnimationReady.xaml" Line="1" Column="1" />
+      <File FileName="Sparky/Views/Page2AnimationReady.xaml.cs" Line="22" Column="46" />
+      <File FileName="Sparky/Data/SharedInfo.cs" Line="10" Column="42" />
+      <File FileName="Sparky/SparkyPage.xaml" Line="1" Column="1" />
+      <File FileName="Sparky/SparkyPage.xaml.cs" Line="14" Column="53" />
+      <File FileName="Sparky/Views/Page3Animate.xaml" Line="1" Column="1" />
+      <File FileName="Sparky/Views/Page3Animate.xaml.cs" Line="32" Column="46" />
+      <File FileName="Sparky/Views/Page2Rooms.xaml" Line="1" Column="1" />
+      <File FileName="Sparky/Views/Page2Rooms.xaml.cs" Line="32" Column="4" />
+      <File FileName="Sparky/Page3AnimationStart.xaml" Line="1" Column="1" />
+      <File FileName="Droid/MainActivity.cs" Line="13" Column="63" />
+      <File FileName="iOS/Main.cs" Line="15" Column="5" />
+      <File FileName="../../../../Library/Frameworks/Xamarin.Android.framework/Versions/7.2.0-7/lib/xbuild/Xamarin/Android/Xamarin.Android.Common.targets" Line="1" Column="1" />
+      <File FileName="iOS/Info.plist" />
+      <File FileName="Sparky/Page3AnimationStart.xaml.cs" Line="105" Column="44" />
+      <File FileName="Droid/Properties/AndroidManifest.xml" Line="5" Column="12" />
+      <File FileName="Sparky/App.xaml.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Sparky.Droid PreferredExecutionTarget="Android.MyDevice" />
+  <MonoDevelop.Ide.ItemProperties.Sparky.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.84A5F939-C15F-488E-B5EF-563A4BFE2939" />
+</Properties>
