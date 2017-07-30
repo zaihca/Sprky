@@ -15,14 +15,9 @@ namespace Sparky
 		Message isdone;
 		List<Message> msgs;
 
- 
-
-
-
 		public Page3Animate()
 		{
 			InitializeComponent();
-
 		}
 
 		async void Animate()
@@ -36,21 +31,13 @@ namespace Sparky
 			await image2.TranslateTo(scSize, 0, 1000);
 		}
 
-
-
-
 		protected async override void OnAppearing()
 		{
 			base.OnAppearing();
 
-
-
-
-
-
 			try
 			{
-			    spk = new Spark("MDliN2FjMGEtOGUyYS00NDRmLWFiODEtMDNkYjY1ZDEzZDE1ZGI0NTk2ZTgtNzgw");
+			    spk = SparkInstance.Instance.Sparkey;
 			    msgs = await spk.GetMessagesAsync(SharedInfo.sharedRoom.id);
 			    isdone = msgs.Find((Message obj) => obj.Equals("Done"));
 
@@ -59,7 +46,6 @@ namespace Sparky
 			{
 				await DisplayAlert("Error "+ex.StatusCode, ex.Message, "OK");
 			}
-
 
 			try
 			{
@@ -70,13 +56,7 @@ namespace Sparky
 
 			}
 
-
-
 			var minutes = TimeSpan.FromSeconds(1);
-
-
-		
-
 			Device.StartTimer (minutes, () => {
 
 				// call your method to check for notifications here
@@ -90,7 +70,7 @@ namespace Sparky
 
 					} 
 				x++;
-			lbl.Text = x + " ";
+				lbl.Text = x + " ";
 				if (x>10)
 				{
 					return false;

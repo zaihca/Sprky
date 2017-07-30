@@ -16,7 +16,7 @@ namespace Sparky
 			base.OnAppearing();
 			try
 			{
-				var spk = new Spark("MDliN2FjMGEtOGUyYS00NDRmLWFiODEtMDNkYjY1ZDEzZDE1ZGI0NTk2ZTgtNzgw");
+				var spk = SparkInstance.Instance.Sparkey;
 				var rooms = await spk.GetRoomsAsync();
 				lstRooms.ItemsSource = rooms;
 			}

@@ -10,7 +10,6 @@
   </PropertyGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)SparkyPage.xaml" />
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Page1Menu.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -23,16 +22,14 @@
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Page2Rooms.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Page3AnimationStart.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Page3AnimationStart.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\SparkyPage.xaml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)SparkyPage.xaml.cs">
-      <DependentUpon>SparkyPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\Page1Menu.xaml.cs">
       <DependentUpon>Page1Menu.xaml</DependentUpon>
@@ -47,9 +44,13 @@
     <Compile Include="$(MSBuildThisFileDirectory)Views\Page2Rooms.xaml.cs">
       <DependentUpon>Page2Rooms.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Page3AnimationStart.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Page3AnimationStart.xaml.cs">
       <DependentUpon>Page3AnimationStart.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\SparkyPage.xaml.cs">
+      <DependentUpon>SparkyPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Data\SparkInstance.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Views\" />

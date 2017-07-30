@@ -9,11 +9,11 @@ namespace Sparky
 {
 	public partial class Page3AnimationStart : ContentPage
 	{
-int x = 0;
-double scSize = 1;
-Spark spk;
-Message isdone;
-List<Message> msgs;
+	int x = 0;
+	double scSize = 1;
+	Spark spk;
+	Message isdone;
+	List<Message> msgs;
 
 		System.Timers.Timer timer;
 		int _countSeconds;
@@ -38,7 +38,7 @@ List<Message> msgs;
 
 			try
 			{
-				//isdone = msgs.Find((Message obj) => obj.text.Equals("Done"));
+				
 				isdone = msgs.Find((Message obj) =>  obj.text=="Done");
 				if (isdone!=null)
 				{
@@ -47,7 +47,6 @@ List<Message> msgs;
 				if (isdone.text=="Done")
 					{
 						btn.IsVisible = false;
-			//			image2.IsVisible = true;
 						imageT.IsVisible = true;
 
 						Animate();
@@ -61,24 +60,8 @@ List<Message> msgs;
 			{
 				await DisplayAlert("Error ", ex.Message, "OK");
 			}
-
-
-						
-						
-					 
-
-			/*
-			_countSeconds--;
-
-	
-			Device.BeginInvokeOnMainThread (() => {
-			lbl.Text = "there" + _countSeconds; });
-			
-			if (_countSeconds == 0)
-			{
-				timer.Stop();
-			} 
-			*/
+								
+					
 		}
 
 		protected async override void OnAppearing()
@@ -86,7 +69,7 @@ List<Message> msgs;
 			base.OnAppearing();
 			try
 			{
-			    spk = new Spark("MDliN2FjMGEtOGUyYS00NDRmLWFiODEtMDNkYjY1ZDEzZDE1ZGI0NTk2ZTgtNzgw");
+			    spk = SparkInstance.Instance.Sparkey;
 				msgs = await spk.GetMessagesAsync(SharedInfo.sharedRoom.id);
 			//	isdone = msgs.Find((Message obj) => obj.text=="Done");
 
@@ -113,10 +96,6 @@ List<Message> msgs;
 		await imageT.ScaleTo(2, 1000);
 		await Task.Delay(1000);
 		await imageT.ScaleTo(1, 1000);
-			//await imageT.FadeTo(0, 1000);
-			//await Audio.Manager.PlayBackgroundMusic("bgMusic.mp3");
-		//	await image.TranslateTo(scSize - 50, 0, 1000);
-		//	await image2.TranslateTo(scSize, 0, 1000);
 
 		}
 

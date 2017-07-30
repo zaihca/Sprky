@@ -15,7 +15,7 @@ namespace Sparky
 		{
 				try
 			{
-				var spk = new Spark("MDliN2FjMGEtOGUyYS00NDRmLWFiODEtMDNkYjY1ZDEzZDE1ZGI0NTk2ZTgtNzgw");
+				var spk = SparkInstance.Instance.Sparkey;
 				await spk.CreateMessageAsync(SharedInfo.sharedRoom.id, null, null, "hello");
 				var msgs = await spk.GetMessagesAsync(SharedInfo.sharedRoom.id);
 				SharedInfo.sharedWaitingTime = msgs.Count;
@@ -26,8 +26,6 @@ namespace Sparky
 			{
 				await DisplayAlert("Error "+ex.StatusCode, ex.Message, "OK");
 			}
-
-			//await Navigation.PushModalAsync(new Page3Animate());
 			await Navigation.PushModalAsync(new Page3AnimationStart());
 		}
 	}

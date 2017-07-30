@@ -17,7 +17,7 @@ namespace Sparky
 			try
 			{
 				SharedInfo.sharedRoomName = tbRoomName.Text;
-				var spk = new Spark("MDliN2FjMGEtOGUyYS00NDRmLWFiODEtMDNkYjY1ZDEzZDE1ZGI0NTk2ZTgtNzgw");
+				var spk = SparkInstance.Instance.Sparkey;
 				SharedInfo.sharedRoom = await spk.CreateRoomAsync(SharedInfo.sharedRoomName);
 				await DisplayAlert("Success ", "Room created successfully", "Ok");
 
